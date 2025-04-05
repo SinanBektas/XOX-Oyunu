@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XOX Oyunu</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="score-board">
+        <div>Oyuncu X: <span id="scoreX">0</span></div>
+        <div>Oyuncu O: <span id="scoreO">0</span></div>
+    </div>
+    <div class="game-board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <button id="resetButton" class="hidden">↻</button>
+    <div class="difficulty">
+        <label for="difficulty">Zorluk Seviyesi:</label>
+        <select id="difficulty">
+            <option value="easy">Kolay</option>
+            <option value="medium">Orta</option>
+            <option value="hard">Zor</option>
+        </select>
+    </div>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/score.js"></script>
+</body>
+</html>
